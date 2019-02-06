@@ -9,7 +9,7 @@
     align-items: center;
     font-size: 10px;
     margin-top: 1.25rem;
-
+    cursor: pointer;
 }
 
 .login2 {
@@ -57,7 +57,7 @@
     border-radius: 2px 2px 2px 2px;
     color: #111111;
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
     width:  108px;
     height: 40px;
     font-size: 12px;
@@ -116,4 +116,23 @@ body{
     width: 375;
     height: 1400;
 
+}
+.post:hover:before{
+    top: 30%;
+}
+ .post:before{
+    content: '投稿する';
+    position: absolute;
+    /* top: 50%; */
+    left:   15%; 
+    transform: translate(-50%,-50%);
+    
+}
+
+.post:after{
+    font-family: 'Ionicons';
+    content: '\f141';
+    width: 25px;
+    bottom: 50%;
+    font-size: 30px;
 }

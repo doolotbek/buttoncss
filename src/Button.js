@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from "classnames";
+// import classNames from "classnames";
 import buttonStyle from './Button.css';
 import {withStyles} from "@material-ui/core";
+
 
 function RegularButton(props) {
   const {
@@ -12,13 +13,17 @@ function RegularButton(props) {
     fullWidth,
     size,
     link,
+    heart,
     text,
     rootStyle
   } = props;
   console.log("className", rootStyle)
   return (
     <button className={rootStyle}>
-    {text}
+    {text }
+    {/* <div className={heart}>
+    <i class="fa fa-heart"></i>
+    </div> */}
     </button>
     
   );
