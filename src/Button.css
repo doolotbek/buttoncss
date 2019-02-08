@@ -12,6 +12,16 @@
     cursor: pointer;
 }
 
+.login1:hover:after{
+    font-family: 'Ionicons';
+    content: '\f141';
+    font-size: 15px;
+    float: right;
+    color: red;
+    animation: animate 1s linear infinite;
+}
+
+
 .login2 {
     width:  80px;
     height: 32px;
@@ -24,6 +34,14 @@
     margin-top: 1.25rem;
 }
 
+.login2:hover:after{
+    font-family: 'Ionicons';
+    content: '\f141';
+    font-size: 15px;
+    float: right;
+    color: red;
+    animation: animate 1s linear infinite;
+}
 .login3{
     background-color: #C0DBFA; 
     color: white;
@@ -36,6 +54,14 @@
     margin-top: 1.25rem;
 }
 
+.login3:hover:after{
+    font-family: 'Ionicons';
+    content: '\f141';
+    font-size: 15px;
+    float: right;
+    color: red;
+    animation: animate 1s linear infinite;
+}
 .post{
     background-color: #e9545b; 
     color: white;
@@ -46,10 +72,16 @@
     height: 40px;
     font-size: 12px;
     margin-top: 1.25rem;
+    overflow: hidden;
 }
-
-
-
+.post:hover:after{
+    font-family: 'Ionicons';
+    content: '\f141';
+    font-size: 20px;
+    float: right;
+    color: white;
+    animation: animate 1s linear infinite;
+}
 .cancel {
     background-color: #C0DBFA; 
     border-color: #6E6E6E;
@@ -62,7 +94,15 @@
     height: 40px;
     font-size: 12px;
     margin-top: 1.25rem;
-    
+}
+
+.cancel:hover:after{
+    font-family: 'Ionicons';
+    content: '\f141';
+    font-size: 20px;
+    float: right;   
+    color: red;
+    animation: animate 1s linear infinite;
 }
 .cancel1{
     background-color:rgba(192,219,250, 0.5);
@@ -77,6 +117,26 @@
     font-size: 20px;
     margin-top: 1.25rem;
 }
+.cancel1:hover:before{
+    font-family: 'Ionicons';
+    content: '\f141';
+    vertical-align: middle;
+    font-size: 30px;
+    float: left;
+    color: red;
+    animation: animate 1s linear infinite;
+
+}
+
+.cancel1:hover:after{
+    font-family: 'Ionicons';
+    content: '\f141';
+    font-size: 30px;
+    vertical-align: middle;
+    float: right;
+    color: red;
+    animation: animate 1s linear infinite;
+}
 .login4{
     background-color: #e9545b; 
     color: white;
@@ -86,9 +146,28 @@
     height: 50px;
     font-size: 20px;
     margin-top: 1.25rem;
-
+    text-align:center;
 }
+.login4:hover:before{
+    font-family: 'Ionicons';
+    content: '\f141\f141';
+    font-size: 30px;
+    float: left;
+    color: white;
+    animation: animate 1s linear infinite;
+}
+.login4:hover::after {
+    font-family: 'Ionicons';
+    content: '\f141\f141';
+    font-size: 30px;
+    float: right;
+    color: white;
+    animation: animate 1s linear infinite;
+}
+
 .change{
+    font-family: 'Ionicons';
+    
     background-color: #111111; 
     color: white;
     border-spacing: 1px;
@@ -97,9 +176,39 @@
     height: 50px;
     font-size: 20px;
     margin-top: 1.25rem;
-
+    
 }
+.change:hover::before{
+    font-family: 'Ionicons';
+    content: '\f141\f141\f141';
+    font-size: 30px;
+    float: left  ;
+    /* right: 100%; */
+    animation: animate 1s linear infinite;
+    color: red;
+}
+.change:hover:after{
+    font-family: 'Ionicons';
+    content: '\f141\f141\f141';
+    font-size: 30px;
+    float: right  ;
+    animation: animate 1s linear infinite;
+    color: red;
+}   
+@keyframes  animate
+{
+    
+    20%
+    {
+        transform: scale(1,0.9);
+        content: '\f141';
+    }
+    50%
+    {
+        transform: scale(1.2,1.2)
+    }
 
+   }
 .text {
     border-spacing: 1px;
     border-radius: 2px 2px 2px 2px;
@@ -107,32 +216,19 @@
     height: 50px;
     font-size: 12px;
     margin-top: 1.25rem;
+  
 }
-
-
-
-body{
+ body{
     background-color: #C0DBFA;
     width: 375;
     height: 1400;
 
 }
-.post:hover:before{
-    top: 30%;
-}
- .post:before{
-    content: '投稿する';
-    position: absolute;
-    /* top: 50%; */
-    left:   15%; 
-    transform: translate(-50%,-50%);
-    
-}
 
-.post:after{
-    font-family: 'Ionicons';
-    content: '\f141';
-    width: 25px;
-    bottom: 50%;
-    font-size: 30px;
-}
+
+
+
+
+
+
+

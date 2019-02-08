@@ -8,14 +8,10 @@
 }
 
 
-.btn:before{
-   
-}
-.btn:hover:before {
-    top:-35px;
-}
-.btn:after {
-    content: '';
-}
 
-
+body{
+    background-color: #C0DBFA;
+    width: 375;
+    height: 1400;
+    
+}

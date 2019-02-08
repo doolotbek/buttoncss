@@ -7,25 +7,20 @@ import {withStyles} from "@material-ui/core";
 
 function RegularButton(props) {
   const {
-    classes,
-    color,
-    round,
-    fullWidth,
-    size,
-    link,
-    heart,
+    // classes,
+    // color,
+    // round,
+    // fullWidth,
+    // size,
+    // link,
+    // heart,
     text,
     rootStyle
   } = props;
   console.log("className", rootStyle)
   return (
     <button className={rootStyle}>
-    {text }
-    {/* <div className={heart}>
-    <i class="fa fa-heart"></i>
-    </div> */}
-    </button>
-    
+    {text } </button>
   );
 }
 
